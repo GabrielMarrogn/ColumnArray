@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         
-        double[][] arr = new double[3][3];
+        double[][] arr = new double[12][12];
 
         int column = Integer.parseInt(br.readLine());
         String calc = br.readLine();
@@ -32,7 +32,7 @@ public class App {
             for(int i = 0; i < arr.length; i++){
                 media += arr[i][column];
             }
-            media = media/3;
+            media = media/12;
             System.out.println(decimal.format(media));
         }
     }
